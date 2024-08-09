@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         build_env:
-          - tag: "SNAPSHOT"
+          - tag: "snapshots"
             pkgarch: aarch64_cortex-a53
             target: mediatek
             subtarget: filogic
