@@ -3,16 +3,16 @@ name: Create Release on Tag
 on:
   push:
     tags:
-      - "*.*.*"
+      - "v*.*.*"
 
 jobs:
   build:
-    name: "${{ matrix.build_env.tag }} - ${{ matrix.build_env.pkgarch}} :: ${{ matrix.build_env.target}}/${{ matrix.build_env.subtarget}} build"
+    name: "v${{ matrix.build_env.tag }} - ${{ matrix.build_env.pkgarch}} :: ${{ matrix.build_env.target}}/${{ matrix.build_env.subtarget}} build"
     runs-on: ubuntu-latest
     strategy:
       matrix:
         build_env:
-          - tag: "SNAPSHOT"
+          - tag: "master"
             pkgarch: aarch64_cortex-a53
             target: mediatek
             subtarget: filogic
