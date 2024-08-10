@@ -1,5 +1,5 @@
 name: Create Release for mr90x snapshot r27107-44b6df3184
-#on: [workflow_dispatch]
+on: [workflow_dispatch]
 #on:
 #  workflow_dispatch:
 #  push:
