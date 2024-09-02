@@ -1,7 +1,6 @@
 name: Create Release for mr90x openwrt snapshot r27284-5fa86a4e2b (85f01288514feec9e9e108fc7c4d7052028aa686)
-on: [workflow_dispatch]
+# on: [workflow_dispatch]
 on:
-  workflow_dispatch:
   push:
     tags:
       - "v*.*.*"
