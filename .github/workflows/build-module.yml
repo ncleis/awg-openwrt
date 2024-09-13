@@ -13,11 +13,11 @@ jobs:
     strategy:
       matrix:
         build_env:
-          - hash: "85f01288514feec9e9e108fc7c4d7052028aa686"
+          - hash: "c4a926516038250105aef1cc5c6ec9fd5c74e300"
             pkgarch: aarch64_cortex-a53
             target: mediatek
             subtarget: filogic
-            vermagic: "8aed217b2865fd62374cdd2767f121bd"
+            vermagic: "129ccc9ecf700e21ecff22394a05f2be"
 
     steps:
       - uses: actions/checkout@v4
